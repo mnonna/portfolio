@@ -2,7 +2,7 @@
   <v-container class="resume-introduction-main d-flex justify-center align-center" fluid>
     <v-layout column align-center justify-center fill-height>
       <v-col class="d-flex align-center justify-space-around" height="300px">
-        <v-flex class="resume-profile" lg4 fill-height>
+        <section class="d-flex resume-profile col-xs-12 col-sm-8 col-lg-6">
           <v-layout align-center justify-space-around fill-height>
             <v-img
               :src="require('../assets/profile.jpg')"
@@ -13,7 +13,7 @@
             ></v-img>
             <h2 ref="hello__header">Marcin, frontend dev</h2>
           </v-layout>
-        </v-flex>
+        </section>
       </v-col>
       <v-col class="d-flex align-center justify-center">
         <v-flex class="resume-profile-text" lg8 ref="profile__text">
@@ -31,7 +31,7 @@
         </v-flex>
       </v-col>
       <v-col class="d-flex align-center justify-center">
-        <v-flex class="resume-more-info-section" lg4>
+        <v-flex class="resume-more-info-section col-6">
           <v-layout align-center justify-center fill-height>
             <v-btn class="more-info-btn" outlined height="50px" width="150px" ref="more__info__btn" @click="goToProjects">More Info</v-btn>
           </v-layout>
@@ -64,8 +64,8 @@
         }
       }
       h2{
+        text-align: center;
         @media only screen and (max-width: 1024px){
-          text-align: center;
           margin-top: 20px;
         }
       }
